@@ -1,19 +1,18 @@
 spring:
   redis:
-    uri:
-
+    uri: ${REDIS_URI}
 
   data:
     mongodb:
-      uri:
+      uri: ${MONGO_URI}
       database: journaldb
       auto-index-creation: true
 
   mail:
     host: smtp.gmail.com
     port: 587
-    username: abcd@gmail.com
-    password:
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
     properties:
       mail:
         smtp:
@@ -22,9 +21,8 @@ spring:
             enable: true
 
 server:
-  port: 8081
+  port: ${PORT:8081}
   servlet:
-    context-path:
+    context-path: 
 
-
-weather_api_key:
+weather_api_key: ${WEATHER_API_KEY}
