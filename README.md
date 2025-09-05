@@ -71,7 +71,7 @@ The app will start at → `http://localhost:8080`
 
 ### Admin
 - `GET /admin/all-users` → Get all users
-- `GET /admin/clear-app-cache` → Clear app chache
+- `GET /admin/clear-app-cache` → Clear app cache
 
 ### Journal Entries  
 - `GET /journal` → Get all entries
